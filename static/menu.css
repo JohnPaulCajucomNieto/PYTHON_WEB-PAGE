@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    padding: 0;
+    bottom: 0;
+}
+.navbar {
+    background-color: white ;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 80PX;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  }
+  @media (max-width: 768px) {
+    .navbar {
+        height: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 50%;
+
+    }
+}
+  .navbar a {
+    float: right;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    left: 65px;
+    padding-right: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+  }
+  @media (max-width: 768px) {
+    .navbar a {
+        float: none;
+        padding: 10px;
+        text-align: left;
+        font-size: 8px;
+        position: relative;
+        bottom:  30px;
+
+
+    }
+}
+  .navbar a:hover {
+   color: rgb(255, 68, 0);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+
+
+  }
+  .logo{
+    width: 150px;
+    height: 150px;
+    margin-top: -35px;
+    margin-left: -10px;
+  }
+  .reserve{
+    background-color: rgb(255, 68, 0);
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 50px;
+    font-weight: bold;
+
+  }
+  @media (max-width: 768px) {
+
+    .logo {
+        width: 100px;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+
+    .reserve {
+        margin-right: 20px;
+        font-size: 5px;
+        margin-left: 420px;
+        position: relative;
+        top: 15px;
+    }
+}
+
+  .reserve:hover{
+    background-image: none;
+    background-color: black;
+
+  }
+ .main{
+  margin-top: 5%;
+  text-align: center;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+ }
+.main hr{
+    width: 480px;
+    background-color: orangered;
+}
+.container{
+    display: flex;
+    height: 300px;
+    width: 500px;
+    margin-left: 223px;
+    margin-right: 20px;
+    margin-top: 90px;
+    margin-bottom: 300px;
+
+}
+.container1{
+    display: flex;
+    height: 300px;
+    width: 500px;
+    margin-left: 120px;
+    margin-top: 90px;
+    gap: 30px;
+
+
+}
+.container2{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin-left: 120px;
+    margin-top: 100px;
+    gap: 30px;
+
+}
+.container img{
+    height: 298px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 5px 5px 2px rgba(0, 0, 0, 0.12);
+    padding: 12px 12px 12px 12px;
+    padding-bottom: 200px;
+    margin-left: -180px;
+}
+.container1 img{
+    height: 275px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 5px 5px 2px rgba(0, 0, 0, 0.12);
+    padding: 10px 10px 10px 10px;
+
+}
+pre{
+    margin-left: -313px;
+    margin-top: 350px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(97, 93, 93);
+}
+.price{
+    position: relative;
+    left: -305px;
+    top: 300px;
+    font-weight: bold;
+}
+i{
+    color: orangered;
+    position: relative;
+    left: -370px;
+    padding: 3px;
+    top: 420px;
+}
+.btns{
+    height: 50px;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: -360px;
+    font-size: 12px;
+    top: 440px;
+}
+.btns:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.sales{
+    height: 35px;
+    position: relative;
+    left: -690px;
+    top: 140px;
+}
+.main1{
+       position: relative;
+       top: 2%;
+        text-align: center;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+
+}
+.main1 hr{
+    width: 380px;
+    background-color: orangered;
+
+
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+.snip1533 {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 5px 5px 2px rgba(0, 0, 0, 0.12);
+    color: rgb(97, 93, 93);
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: justify;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 5px solid orangered;
+  margin-TOP: 150PX;
+  margin-left: 42PX;
+}
+.snip1533:hover{
+    background-color: orangered;
+    color: white;
+}
+.snip1533 *,
+.snip1533 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.snip1533 figcaption {
+  padding: 13% 10% 12%;
+}
+
+.snip1533 figcaption:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: orangered;
+  text-align: center;
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.snip1533 h3 {
+  color:black;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+.snip1533 h4 {
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.snip1533 blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+.last-contain img{
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 110px;
+    height: 170px;
+
+}.last-contain1 img{
+    text-align: center;
+    height: 170px;
+    padding-left: 110px;
+    margin-bottom: 80PX;
+
+}
+.footer {
+  position: relative;
+  width: 93.4%;
+  background-color: black;
+  min-height: 20px;
+  height: 250px;
+  padding: 20px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: gray;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+.menu li a{
+  font-size: 15px;
+}
+.menu li a:hover{
+ color: orangered;
+
+}
+
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: orangered;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35%;
+  margin-bottom: 60%;
+  border-bottom: 15px solid white;
+}
+.pp{
+  position: relative;
+  top: 55px;
+}

@@ -1,0 +1,176 @@
+  body{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url('../static/saxs.jpg');
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    margin-left: 500px;
+    margin-top: 50PX;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 50px;
+
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    color: orangered;
+    text-align: center;
+
+  }
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 70px;
+    background-color: orangered;
+  }
+
+  .message,
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .signin {
+    text-align: center;
+  }
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+
+  .signin a {
+    color:orangered;
+  }.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  .form label {
+    position: relative;
+  }
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  .form select {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    width: 514px;
+  }
+  .form input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    width: 498px;
+  }
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: orangered;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+
+  .input {
+    font-size: medium;
+  }
+
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: orangered;
+  }
+
+  .submit:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+label{
+   color: rgba(255, 255, 255, 0.5);
+}
+.lb{
+  margin-left: 5px;
+  font-size: 14PX;
+}
+button{
+  font-weight: bold;
+  width: 102%;
+  margin-top: 20PX;
+  cursor: pointer;
+}

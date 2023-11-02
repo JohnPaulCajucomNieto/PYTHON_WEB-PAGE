@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\form.css">
+    <title>JP Sax Instrumental</title>
+</head>
+<style>
+      body{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url('../static/saxs.jpg');
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    margin-left: 500px;
+    margin-top: 50PX;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 50px;
+
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    color: orangered;
+    text-align: center;
+
+  }
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 70px;
+    background-color: orangered;
+  }
+
+  .message,
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .signin {
+    text-align: center;
+  }
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+
+  .signin a {
+    color:orangered;
+  }.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  .form label {
+    position: relative;
+  }
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  .form select {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    width: 514px;
+  }
+  .form input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    width: 498px;
+  }
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: orangered;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+
+  .input {
+    font-size: medium;
+  }
+
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: orangered;
+  }
+
+  .submit:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+label{
+   color: rgba(255, 255, 255, 0.5);
+}
+.lb{
+  margin-left: 5px;
+  font-size: 14PX;
+}
+button{
+  font-weight: bold;
+  width: 102%;
+  margin-top: 20PX;
+  cursor: pointer;
+}
+
+
+</style>
+
+<body>
+{% for customer in myresult %}
+    <form action="/update" method="post" class="form">
+        <p class="title">UPDATE YOUR INFORMATION</p>
+        <div class="flex">
+            <input type="hidden" name="id" value="{{ customer[0] }}">
+            <label>
+                <input style="width: 250px;" class="input" type="text" placeholder="Enter Firstname" required name="Firstname" value="{{ customer[1] }}">
+                <span>Firstname:</span>
+            </label>
+
+            <label>
+                <input style="width: 227px;" class="input" type="text" placeholder="Enter Lastname" required name="Lastname" value="{{ customer[2] }}">
+                <span>Lastname:</span>
+            </label>
+        </div>
+
+        <label>
+            <input class="input" type="text" placeholder="Enter Full Address" required name="FullAddress" value="{{ customer[3] }}">
+            <span>Full Address:</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="Enter Email Address" required name="EmailAddress" value="{{ customer[4] }}">
+            <span>Email Address:</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="Enter Phone Number" required name="PhoneNumber" value="{{ customer[5] }}">
+            <span>Phone Number:</span>
+        </label>
+
+        <label class="lb" for="Instrument">Select Instrument:</label>
+        <select id="Instrument" name="Instrument" required>
+            <option value="soprano" {% if customer[6] =='soprano'%} selected {% endif %}>Soprano</option>
+            <option value="alto" {% if customer[6] =='alto' %} selected {% endif %}>Alto</option>
+            <option value="tenor" {% if customer[6] =='tenor' %} selected {% endif %}>Tenor</option>
+            <option value="baritone" {% if customer[6] =='baritone' %} selected {% endif %}>Baritone</option>
+        </select>
+
+        <label style="color: white;" class="lb">Quantity:</label>
+        <input type="number" placeholder="Qty" name="Qty" class="box" value="{{ customer[7] }}">
+
+        <label class="lb" for="Brand">Select Brand:</label>
+        <select id="Brand" name="Brand" required>
+            <option value="yamaha" {% if customer[8] =='yamaha' %} selected {% endif %}>Yamaha</option>
+            <option value="vandoreen" {% if customer[8] =='vandoreen' %} selected {% endif %}>Vandoreen</option>
+            <option value="suzuki" {% if customer[8] =='suzuki' %} selected {% endif %}>Suzuki</option>
+            <option value="selmer" {% if customer[8] =='selmer' %} selected {% endif %}>Selmer</option>
+            <option value="remo" {% if customer[8] =='remo' %} selected {% endif %}>Remo</option>
+            <option value="king" {% if customer[8] =='king' %} selected {% endif %}>King</option>
+            <option value="conn" {% if customer[8] =='conn' %} selected {% endif %}>Conn</option>
+            <option value="lidmig" {% if customer[8] =='lidmig' %} selected {% endif %}>Ludwig</option>
+            <option value="zoom" {% if customer[8] =='zoom' %} selected {% endif %}>Zoom</option>
+            <option value="zildjian" {% if customer[8] =='zildjian' %} selected {% endif %}>Zildjian</option>
+        </select>
+
+        {% endfor %}
+
+        <button name="SUBMIT" value="Submit" class="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

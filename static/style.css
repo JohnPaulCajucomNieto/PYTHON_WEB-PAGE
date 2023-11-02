@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    padding: 0;
+    bottom: 0;
+}
+.navbar {
+    background-color: white ;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  }
+  @media (max-width: 768px) {
+    .navbar {
+        height: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 50%;
+
+    }
+}
+  .navbar a {
+    float: right;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    left: 65px;
+    padding-right: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+
+  }
+  @media (max-width: 768px) {
+    .navbar a {
+        float: none;
+        padding: 10px;
+        text-align: left;
+        font-size: 8px;
+        position: relative;
+        bottom:  30px;
+
+
+    }
+}
+  .navbar a:hover {
+   color: rgb(255, 68, 0);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url('../static/saxs.jpg');
+    background-size: cover;
+
+  }
+  .logo{
+    width: 150px;
+    height: 150px;
+    margin-top: -35px;
+    margin-left: -10px;
+  }
+  .reserve{
+    background-color: rgb(255, 68, 0);
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 50px;
+    font-weight: bold;
+
+  }
+  @media (max-width: 768px) {
+
+    .logo {
+        width: 100px;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+
+    .reserve {
+        margin-right: 20px;
+        font-size: 5px;
+        margin-left: 420px;
+        position: relative;
+        top: 15px;
+    }
+}
+
+  .reserve:hover{
+    background-image: none;
+    background-color: black;
+
+  }
+ .main{
+  margin-top: 17%;
+  text-align: center;
+  color: white;
+
+ }
+ h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 70px;
+  text-shadow: 3px 3px orangered;
+ }
+ p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 260px;
+ }
+ button{
+  border: none;
+  background-color: orangered;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+ }
+ button:hover{
+  background-color: black;
+ }
